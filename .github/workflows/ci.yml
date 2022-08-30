@@ -1,7 +1,7 @@
 name: CI
 on: [push]
 env:
-  cache-version: v1
+  cache-version: v3
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -20,12 +20,16 @@ jobs:
         KMH_DATABASE_PASSWORD: P@ssw0rd!
         KMH_DATABASE_SOCKET: /var/run/mysqld/mysqld.sock
     steps:
-    - uses: actions/checkout@v2
+    - uses: actions/checkout@v3
     - name: Restore cache vendor/bundle
-      uses: actions/cache@v1
+      uses: actions/cache@v3
       with:
         path: vendor/bundle
         key: ${{ env.cache-version }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.17.0
     - name: Build
       run: |
         gem install bundler
