@@ -1,0 +1,242 @@
+require:
+  - rubocop-rails
+
+AllCops:
+  Exclude:
+    - 'bin/*'
+    - 'db/schema.rb'
+    - 'node_modules/**/*'
+    - 'vendor/**/*' # rubocop config/default.yml
+    - 'test/dummy/bin/*'
+    - 'test/dummy/db/schema.rb'
+  DisplayCopNames: true
+  NewCops: enable
+
+##################### Layout ################################
+
+Layout/DotPosition:
+  EnforcedStyle: trailing
+
+Layout/ExtraSpacing:
+  Exclude:
+    - "db/migrate/*.rb"
+
+Layout/FirstArrayElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/FirstHashElementIndentation:
+  EnforcedStyle: consistent
+
+Layout/IndentationConsistency:
+  EnforcedStyle: indented_internal_methods
+
+Layout/LineLength:
+  Max: 160
+  AllowedPatterns: ['(\A|\s)#']
+  Exclude:
+    - "config/initializers/doorkeeper.rb"
+    - "config/initializers/simple_form_bootstrap.rb"
+    - "db/migrate/*.rb"
+
+##################### Lint ##################################
+
+Lint/AmbiguousBlockAssociation:
+  Enabled: false
+
+Lint/InheritException:
+  EnforcedStyle: standard_error
+
+Lint/StructNewOverride:
+  Enabled: true
+
+Lint/UnderscorePrefixedVariableName:
+  Enabled: false
+
+Lint/UnusedMethodArgument:
+  Enabled: false
+
+##################### Metrics ##################################
+
+Metrics/AbcSize:
+  Max: 24
+  Exclude:
+    - "db/migrate/*_create_doorkeeper_tables.rb"
+
+Metrics/BlockLength:
+  Exclude:
+    - "Rakefile"     # default
+    - "**/*.rake"    # default
+    - "spec/**/*.rb" # default
+    - "Gemfile"
+    - "Guardfile"
+    - "app/grape/api/*.rb"
+    - "config/environments/*.rb"
+    - "config/initializers/simple_form_bootstrap.rb"
+    - "config/routes.rb"
+    - "config/routes/**/*.rb"
+    - "*.gemspec"
+
+Metrics/ClassLength:
+  Max: 200
+
+Metrics/CyclomaticComplexity:
+  Max: 10
+
+Metrics/MethodLength:
+  Max: 20
+  Exclude:
+    - "db/migrate/*.rb"
+
+Metrics/PerceivedComplexity:
+  Max: 8
+
+##################### Naming #################################
+
+Naming/PredicateName:
+  ForbiddenPrefixes:
+    - "is_"
+    - "have_"
+  NamePrefix:
+    - "is_"
+    - "have_"
+
+##################### Style ##################################
+
+Style/Alias:
+  EnforcedStyle: prefer_alias_method
+
+Style/AndOr:
+  EnforcedStyle: conditionals
+
+Style/AsciiComments:
+  Enabled: false
+
+Style/BlockDelimiters:
+  AutoCorrect: false
+  Exclude:
+    - "spec/**/*"
+
+Style/ClassAndModuleChildren:
+  Enabled: false
+
+Style/CollectionMethods:
+  PreferredMethods:
+    detect: "detect"
+    find: "detect"
+    inject: "inject"
+    reduce: "inject"
+
+Style/Documentation:
+  Enabled: false
+
+Style/DoubleNegation:
+  Enabled: false
+
+Style/EmptyCaseCondition:
+  Enabled: false
+
+Style/EmptyElse:
+  EnforcedStyle: empty
+
+Style/FormatString:
+  EnforcedStyle: percent
+
+Style/FrozenStringLiteralComment:
+  Enabled: false
+
+Style/GuardClause:
+  MinBodyLength: 5
+
+Style/HashEachMethods:
+  Enabled: false
+
+Style/HashSyntax:
+  Exclude:
+    - "**/*.rake"
+    - "Rakefile"
+
+Style/HashTransformKeys:
+  Enabled: false
+
+Style/HashTransformValues:
+  Enabled: false
+
+Style/IfInsideElse:
+  Enabled: false
+
+Style/IfUnlessModifier:
+  Enabled: false
+
+Style/Lambda:
+  EnforcedStyle: literal
+
+Style/MethodCalledOnDoEndBlock:
+  Enabled: true
+
+Style/NumericLiterals:
+  MinDigits: 7
+
+Style/NumericPredicate:
+  Enabled: false
+
+Style/PerlBackrefs:
+  AutoCorrect: false
+
+Style/PreferredHashMethods:
+  EnforcedStyle: verbose
+
+Style/RedundantSelf:
+  Enabled: false
+
+Style/RedundantReturn:
+  AllowMultipleReturnValues: true
+
+Style/SafeNavigation:
+  Enabled: false
+
+Style/Semicolon:
+  Exclude:
+    - "spec/**/*"
+
+Style/SingleLineBlockParams:
+  Enabled: false
+
+Style/StringLiteralsInInterpolation:
+  Enabled: false
+
+Style/TernaryParentheses:
+  Enabled: false
+
+Style/TrailingCommaInArrayLiteral:
+  EnforcedStyleForMultiline: comma
+
+Style/TrailingCommaInHashLiteral:
+  EnforcedStyleForMultiline: comma
+
+##################### Rails ####################################
+
+Rails:
+  Enabled: true
+
+Rails/ContentTag:
+  AutoCorrect: false
+  Exclude:
+    - app/inputs/display_input.rb
+
+Rails/CreateTableWithTimestamps:
+  Exclude:
+    - "db/migrate/*_acts_as_taggable_on_migration.acts_as_taggable_on_engine.rb"
+
+Rails/Output:
+  Exclude:
+    - "db/seeds.rb"
+
+Rails/NotNullColumn:
+  Enabled: false
+
+Rails/SafeNavigation:
+  ConvertTry: true
+
+Rails/SaveBang:
+  AutoCorrect: false
+  Enabled: true
