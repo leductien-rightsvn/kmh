@@ -31,3 +31,7 @@
 
 en:
   hello: "Hello world"
+  danger: "Failure"
+  save:
+    success: "Save successfully"
+    danger: "Failure"
