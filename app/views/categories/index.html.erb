@@ -1,0 +1,45 @@
+<div class="container" style="height:800px;">
+
+<div class="category_list">
+
+
+<div class="table-users">
+   <div class="header">List Of Category</div>
+   
+   <table cellspacing="0">
+      <tr>
+         <th>Id</th>
+         <th>Name</th>
+         <th>Image</th>
+         <th>Edit</th>
+         <th>Delete</th>
+      </tr>
+
+      <tr <% @categories.each do |category| %>>
+        <td> <%= category.id %></td>
+        <td> <%= category.name %></td>
+        <td> <%= image_tag category.image, size: "120x60", alt: "Edit Entry" %></td>
+        
+        <td> <%= link_to "Edit", edit_category_path(category) %> </td>
+        <td><%= button_to 'Delete', category_path(category), method: 'delete', data: {confirm: "Are you sure?"}  %></td>       
+       </tr <% end %>>
+   </table>
+   
+</div>
+<ul class="pagination modal-2">
+  <li><a href="#" class="prev">&laquo </a></li>
+  <li><a href="#">1</a></li>
+  <li> <a href="#">2</a></li>
+  <li> <a href="#" class="active">3</a></li>
+  <li> <a href="#">4</a></li>
+  <li> <a href="#">5</a></li>
+  <li> <a href="#">6</a></li>
+  <li> <a href="#">7</a></li>
+  <li> <a href="#">8</a></li>
+  <li> <a href="#">9</a></li>
+  <li><a href="#" class="next">  &raquo;</a></li>
+</ul><br>
+
+
+</div>
+</div>

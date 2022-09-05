@@ -1,0 +1,10 @@
+
+
+<%= simple_form_for @category do |f| %>
+    <%= f.input :name %>
+    <%= f.file_field :image %> 
+    
+    <%= f.submit %>
+    <%= link_to "Reset", new_category_path %>
+    <%= link_to "List of category", categories_path %>
+<% end %>
