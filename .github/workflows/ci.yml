@@ -39,6 +39,6 @@ jobs:
     - name: Run rubocop
       run: |
         bundle exec rubocop
-    # - name: Run test
-    #   run: |
-    #     bundle exec rspec --format progress
+    - name: Run test
+      run: |
+        bundle exec rspec --format progress
