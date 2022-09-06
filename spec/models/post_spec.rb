@@ -1,16 +1,14 @@
 # == Schema Information
 #
-# Table name: categories
+# Table name: posts
 #
 #  id         :bigint           not null, primary key
 #  name       :string(255)
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #
-# Indexes
-#
-#  index_categories_on_name  (name) UNIQUE
-#
-class Category < ApplicationRecord
-  has_one_attached :image
+require 'rails_helper'
+
+RSpec.describe Post, type: :model do
+  pending "add some examples to (or delete) #{__FILE__}"
 end
