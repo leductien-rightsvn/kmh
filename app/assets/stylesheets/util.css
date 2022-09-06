@@ -1,7 +1,10 @@
+<<<<<<< Updated upstream
 
 
 
 
+=======
+>>>>>>> Stashed changes
 body, html {
 	font-family: Arial, sans-serif;
 	font-size: 15px;
@@ -99,7 +102,10 @@ iframe {border: none;}
 .clblack {color: black;}
 
 /*------------------------------------------------------------------
+<<<<<<< Updated upstream
 
+=======
+>>>>>>> Stashed changes
 /* ------------------------------------ */
 .txt-center {text-align: center;}
 .txt-left {text-align: left;}
@@ -633,5 +639,9 @@ iframe {border: none;}
 /*---------------------------------------------*/
 .pointer-none {
 	pointer-events: none;
+<<<<<<< Updated upstream
 }
 
+=======
+}
+>>>>>>> Stashed changes
