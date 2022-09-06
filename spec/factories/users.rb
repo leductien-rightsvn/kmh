@@ -1,6 +1,6 @@
 FactoryBot.define do
   factory :user do
-    name { "Right VN" }
-    email { "rights-s@gmail.com" }
+    name { FFaker::Name.name }
+    email { FFaker::InternetSE.safe_email }
   end
 end
