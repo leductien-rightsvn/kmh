@@ -1,8 +1,16 @@
 
-.container {max-width: 1380px;}
+.container {
+  max-width: 1380px;
+}
+
+.container_home{
+  min-height: 600px;
+}
 
 @media (max-width: 1600px) {
-.container {max-width: 1200px;}
+.container {
+  max-width: 1200px;
+}
 }
 
 .container-menu-desktop {
