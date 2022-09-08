@@ -1,5 +1,5 @@
 FactoryBot.define do
-    factory :category do
-        name { FFaker::Name.name }
-    end
+  factory :category do
+    name { FFaker::Name.name }
+  end
 end
