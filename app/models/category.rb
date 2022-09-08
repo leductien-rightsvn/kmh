@@ -9,4 +9,5 @@
 #
 class Category < ApplicationRecord
   has_one_attached :image
+  validates :name, presence: true, length: { maximum: 200, minimum: 6 }, uniqueness: true
 end
