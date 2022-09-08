@@ -3,9 +3,9 @@
 # Table name: discounts
 #
 #  id         :bigint           not null, primary key
-#  code       :string(255)
-#  money      :float(24)
-#  name       :string(255)
+#  code       :string(255)      not null
+#  money      :float(24)        not null
+#  name       :string(255)      not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #

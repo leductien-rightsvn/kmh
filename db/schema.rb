@@ -12,9 +12,9 @@
 
 ActiveRecord::Schema[7.0].define(version: 2022_09_08_023011) do
   create_table "discounts", charset: "utf8mb4", collation: "utf8mb4_bin", force: :cascade do |t|
-    t.string "name"
-    t.string "code"
-    t.float "money"
+    t.string "name", null: false
+    t.string "code", null: false
+    t.float "money", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end
