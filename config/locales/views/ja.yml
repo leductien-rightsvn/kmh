@@ -1,0 +1,13 @@
+ja:
+  view:
+    operation:
+      new: 新規作成
+      show: 詳細
+      edit: 編集
+      destroy: 削除
+      cancel: キャンセル
+      search: 検索
+      commit: 変更
+      export: エクスポート
+      import: インポート
+      back: 戻る
