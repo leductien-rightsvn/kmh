@@ -11,3 +11,8 @@ ja:
       export: エクスポート
       import: インポート
       back: 戻る
+
+  console:
+    dashboard:
+      index:
+        message: "Comming soon!"
