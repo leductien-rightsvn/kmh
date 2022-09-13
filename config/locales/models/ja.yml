@@ -11,6 +11,7 @@ ja:
       product: プロダクト
       category: カテゴリー
       discount: 割引
+      order: 注文
     attributes:
       base: &base
         id: ID

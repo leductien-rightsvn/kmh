@@ -6,13 +6,22 @@
 #  status      :integer
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
-#  discount_id :integer
-#  user_id     :integer
+#  discount_id :bigint           not null
+#  user_id     :bigint           not null
+#
+# Indexes
+#
+#  index_orders_on_discount_id  (discount_id)
+#  index_orders_on_user_id      (user_id)
+#
+# Foreign Keys
+#
+#  fk_rails_...  (discount_id => discounts.id)
+#  fk_rails_...  (user_id => users.id)
 #
 FactoryBot.define do
   factory :order do
-    user_id { 1 }
-    discount_id { 1 }
-    status { 1 }
+    user
+    discount
   end
 end
