@@ -54,7 +54,6 @@ h2{
 
 .fl-table td, .fl-table th {
   text-align: center;
-
   padding: 8px;
 }
 
@@ -68,7 +67,6 @@ h2{
   background: #4FC3A1;
 }
 
-
 .fl-table thead th:nth-child(odd) {
   color: #ffffff;
   background: #324960;
@@ -78,79 +76,11 @@ h2{
   background: #F8F8F8;
 }
 
-/* Responsive */
-
-@media (max-width: 767px) {
-.fl-table {
-    display: block;
-    width: 100%;
-}
-.table-wrapper:before{
-    content: "Scroll horizontally >";
-    display: block;
-    text-align: right;
-    font-size: 11px;
-    color: white;
-    padding: 0 0 10px;
-}
-.fl-table thead, .fl-table tbody, .fl-table thead th {
-    display: block;
-}
-.fl-table thead th:last-child{
-    border-bottom: none;
-}
-.fl-table thead {
-    float: left;
-}
-.fl-table tbody {
-    width: auto;
-    position: relative;
-    overflow-x: auto;
-}
-.fl-table td, .fl-table th {
-    padding: 20px .625em .625em .625em;
-    height: 60px;
-    vertical-align: middle;
-    box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
-    width: 120px;
-    font-size: 13px;
-    text-overflow: ellipsis;
-}
-.fl-table thead th {
-    text-align: left;
-    border-bottom: 1px solid #f7f7f9;
-}
-.fl-table tbody tr {
-    display: table-cell;
-}
-.fl-table tbody tr:nth-child(odd) {
-    background: none;
-}
-.fl-table tr:nth-child(even) {
-    background: transparent;
-}
-.fl-table tr td:nth-child(odd) {
-    background: #F8F8F8;
-    border-right: 1px solid #E6E4E4;
-}
-.fl-table tr td:nth-child(even) {
-    border-right: 1px solid #E6E4E4;
-}
-.fl-table tbody td {
-    display: block;
-    text-align: center;
-}
-}
-
 $baseColor: #398B93;
 $borderRadius: 10px;
 $imageBig: 100px;
 $imageSmall: 60px;
 $padding: 10px;
-
-
 
 .header {
   background-color: darken($baseColor, 5%);
@@ -233,7 +163,6 @@ img {
   width: $imageBig;
 }
 
-
 tr {
   background-color: white !important;
   border: 1px solid lighten($baseColor, 20%);
@@ -298,92 +227,6 @@ a{
 } 
 }
 
-.product-content {
-  border: 1px solid #dfe5e9;
-  margin-bottom: 20px;
-  margin-top: 12px;
-  background: #fff
-}
-
-.product-content .carousel-control.left {
-  margin-left: 0
-}
-
-.product-content .product-image {
-  background-color: #fff;
-  display: block;
-  min-height: 238px;
-  overflow: hidden;
-  position: relative
-}
-
-.product-content .product-deatil {
-  border-bottom: 1px solid #dfe5e9;
-  padding-bottom: 17px;
-  padding-left: 16px;
-  padding-top: 16px;
-  position: relative;
-  background: #fff
-}
-
-.product-deatil {
-  padding: 30px 30px 50px
-}
-
-.product-deatil hr+.description-tabs {
-  padding: 0 0 5px!important
-}
-
-.product-deatil .carousel-control.left,
-.product-deatil .carousel-control.right {
-  background: none!important
-}
-
-.product-deatil .glyphicon {
-  color: #3276b1
-}
-
-.product-deatil .product-image {
-  border-right: none!important
-}
-
-.product-deatil .name {
-  margin-top: 0;
-  margin-bottom: 0
-}
-
-.product-deatil .name small {
-  display: block
-}
-
-.product-deatil .name a {
-  margin-left: 0
-}
-
-.product-deatil .price-container {
-  font-size: 24px;
-  margin: 0;
-  font-weight: 300
-}
-
-.product-deatil .price-container small {
-  font-size: 12px
-}
-
-.product-deatil .fa-2x {
-  font-size: 16px!important
-}
-
-.product-deatil .fa-2x>h5 {
-  font-size: 12px;
-  margin: 0
-}
-
-.product-deatil .fa-2x+a,
-.product-deatil .fa-2x+a+a {
-  font-size: 13px
-}
-
 .button_delete{
   font-family: 'Raleway', Arial, sans-serif;
   border: none;
@@ -393,7 +236,6 @@ a{
   cursor: pointer;
   padding: 0px 30px;
   display: inline-block;
-
   text-transform: uppercase;
   line-height: 46px;
   font-weight: 100;
@@ -402,6 +244,5 @@ a{
   font-size: 12px;
   border-radius: 23px;
   letter-spacing: 2px;
-  
   box-sizing: border-box;
 }

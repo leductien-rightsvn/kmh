@@ -55,6 +55,9 @@ ja:
       placeholder: キーワード
     signout: ログアウト
     versions: 履歴
+    notification: 
+      success: 成功
+      failure: 失敗
   layouts:
     application:
       <<: *controller
