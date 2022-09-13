@@ -21,7 +21,7 @@
         <td> <%= image_tag category.image, size: "120x60", alt: "Edit Entry" %></td>
         
         <td> <%= link_to "Edit", edit_category_path(category) %> </td>
-        <td><%= button_to 'Delete', category_path(category), method: 'delete', data: {confirm: "Are you sure?"}  %></td>       
+        <td><%= button_to 'Delete', category_path(category), method: 'delete', data: {confirm: "Are you sure?"} , class: 'button_delete' %></td>       
        </tr <% end %>>
    </table>
    
