@@ -55,7 +55,7 @@ ja:
       placeholder: キーワード
     signout: ログアウト
     versions: 履歴
-    notification: 
+    notification:
       success: 成功
       failure: 失敗
   layouts:
@@ -171,6 +171,7 @@ ja:
       create: 登録
       submit: 保存
       update: 更新
+    
   number:
     currency:
       format:

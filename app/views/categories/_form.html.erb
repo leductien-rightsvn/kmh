@@ -1,8 +1,8 @@
 <%= simple_form_for @category do |f| %>
-    <%= f.input :name, label: 'Name of category', error: 'Username is mandatory, please specify one'%>
+    <%= f.input :name, label: 'カテゴリーの名前', error: 'ユーザー名は必須です。指定してください'%>
     <%= f.file_field :image %> 
     <%= f.submit %>
     <br>
-    <%= link_to "Reset", new_category_path %>
-    <%= link_to "List of category", categories_path %>
+    <%= link_to t("view.operation.new"), new_category_path %>
+    <%= link_to t("categories.form.listCategory"), categories_path %>
 <% end %>

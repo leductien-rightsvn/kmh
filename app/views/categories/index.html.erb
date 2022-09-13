@@ -1,21 +1,21 @@
 <div class="container" style="height:800px;">
 <div class="category_list">
 <div class="table-users">
-   <div class="header">List Of Category</div>
+   <div class="header">型録一覧</div>
    <table cellspacing="0">
       <tr>
          <th>Id</th>
-         <th>Name</th>
-         <th>Image</th>
-         <th>Edit</th>
-         <th>Delete</th>
+         <th>氏名</th>
+         <th>写真</th>
+         <th>編集</th>
+         <th>削除</th>
       </tr>
       <tr <% @categories.each do |category| %>>
         <td> <%= category.id %></td>
         <td> <%= category.name %></td>
         <td> <%= image_tag category.image, size: "120x60", alt: "Edit Entry" %></td> 
-        <td> <%= link_to "Edit", edit_category_path(category) %> </td>
-        <td><%= button_to 'Delete', category_path(category), method: 'delete', data: {confirm: "Are you sure?"} , class: 'button_delete' %></td>       
+        <td> <%= link_to t("view.operation.edit"), edit_category_path(category) %> </td>
+        <td><%= button_to t("view.operation.destroy"), category_path(category), method: 'delete', data: {confirm: "Are you sure?"} , class: 'button_delete' %></td>       
        </tr <% end %>>
    </table>
    
