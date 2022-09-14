@@ -10,6 +10,12 @@ gem 'rails-controller-testing'
 
 gem 'simple_form'
 
+# paging
+gem 'kaminari'
+
+# nice interface for pagination
+gem 'bootstrap-kaminari-views'
+
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 

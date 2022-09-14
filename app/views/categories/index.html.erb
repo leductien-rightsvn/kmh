@@ -15,24 +15,14 @@
         <td> <%= category.name %></td>
         <td> <%= image_tag category.image, size: "120x60", alt: "Edit Entry" %></td> 
         <td> <%= link_to t("view.operation.edit"), edit_category_path(category) %> </td>
-        <td><%= button_to t("view.operation.destroy"), category_path(category), method: 'delete', data: {confirm: "Are you sure?"} , class: 'button_delete' %></td>       
+        <td><%= button_to t("view.operation.destroy"), category_path(category), method: 'delete', data: {confirm: t("controller.are_you_sure", text: category.name)} , class: 'button_delete' %></td>       
        </tr <% end %>>
+      
    </table>
-   
-</div>
-<ul class="pagination modal-2">
-  <li><a href="#" class="prev">&laquo </a></li>
-  <li><a href="#">1</a></li>
-  <li> <a href="#">2</a></li>
-  <li> <a href="#" class="active">3</a></li>
-  <li> <a href="#">4</a></li>
-  <li> <a href="#">5</a></li>
-  <li> <a href="#">6</a></li>
-  <li> <a href="#">7</a></li>
-  <li> <a href="#">8</a></li>
-  <li> <a href="#">9</a></li>
-  <li><a href="#" class="next">  &raquo;</a></li>
-</ul><br>
 
+</div>
+
+
+<%= paginate @categories  %>
 </div>
 </div>
