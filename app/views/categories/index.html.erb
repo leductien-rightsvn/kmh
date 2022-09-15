@@ -16,13 +16,9 @@
         <td> <%= image_tag category.image, size: "120x60", alt: "Edit Entry" %></td> 
         <td> <%= link_to t("view.operation.edit"), edit_category_path(category) %> </td>
         <td><%= button_to t("view.operation.destroy"), category_path(category), method: 'delete', data: {confirm: t("controller.are_you_sure", text: category.name)} , class: 'button_delete' %></td>       
-       </tr <% end %>>
-      
+       </tr <% end %>> 
    </table>
-
 </div>
-
-
 <%= paginate @categories  %>
 </div>
 </div>
