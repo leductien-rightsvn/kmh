@@ -5,11 +5,17 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <%= csrf_meta_tags %>
     <%= csp_meta_tag %>
+<<<<<<< HEAD
     <%= stylesheet_link_tag "console/application", "data-turbo-track": "reload" %>
+=======
+
+    <%= stylesheet_link_tag "application", "data-turbo-track": "reload" %>
+>>>>>>> 3061ed5 (category-controller-fix-comment-1st)
     <%= javascript_importmap_tags %>
   </head>
 
   <body>
+<<<<<<< HEAD
     <section>
       <%= render "layouts/console/content_header" %>
       <div id="contain" class="container">
@@ -19,4 +25,9 @@
     </section>
   </body>
   
+=======
+    <%= render "layouts/console/flashmessages", flash: flash %>
+    <%= yield %>
+  </body>
+>>>>>>> 3061ed5 (category-controller-fix-comment-1st)
 </html>

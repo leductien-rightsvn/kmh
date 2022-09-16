@@ -1,0 +1,18 @@
+<div class="container">
+<div class="wrapper">
+<div class="category-show-img">
+  <% if @category.image.present? %>
+  <%= image_tag @category.image, size: "350x327", alt: "Edit Entry" %>
+  <% end %>
+</div>
+<div class="category-show-info">
+  <div class="category-show-text">
+    <h1><%= @category.name %></h1>
+    <h2>by studio and friends</h2>
+    <p>これは、表示するために選択した当社の Web  <br> サイトのカテゴリです。 サイトには、探索<br> する必要がある多くのカテゴリがあります。<br>当サイトでその楽しさを体験してください<br> どうもありがとうございました </p>
+  </div>
+  <div class="category-show-price-btn">   
+  <button type="button"><%= t("view.operation.list_detail") %></button>
+</div>
+</div>
+</div>

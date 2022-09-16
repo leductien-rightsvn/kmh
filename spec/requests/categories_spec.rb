@@ -1,6 +1,8 @@
 require 'rails_helper'
 
-RSpec.describe '/categories', type: :request do
+RSpec.describe 'Console::Categories', type: :request do
+  before { host! "#{ENV.fetch('SUBDOMAIN_CONSOLE', nil)}.lvh.me:3000" }
+
   let(:valid_attributes) {
     { name: 'My favorite' }
   }
@@ -11,7 +13,7 @@ RSpec.describe '/categories', type: :request do
 
   describe 'GET /categories' do
     it 'renders a successful response' do
-      get categories_url
+      get console_categories_url
       expect(response).to be_successful
     end
   end
@@ -19,14 +21,14 @@ RSpec.describe '/categories', type: :request do
   describe 'GET /show' do
     it 'renders a successful response' do
       category = Category.create! valid_attributes
-      get category_url(category)
+      get console_category_url(category)
       expect(response).to be_successful
     end
   end
 
   describe 'GET /categories/new' do
     it 'renders a successful response' do
-      get new_category_url
+      get new_console_category_url
       expect(response).to be_successful
     end
   end
@@ -34,7 +36,7 @@ RSpec.describe '/categories', type: :request do
   describe 'GET /category/1/edit' do
     it 'renders a successful response' do
       category = Category.create! valid_attributes
-      get edit_category_url(category)
+      get edit_console_category_url(category)
       expect(response).to be_successful
     end
   end
@@ -45,7 +47,7 @@ RSpec.describe '/categories', type: :request do
         get '/categories/new'
         expect(response).to render_template(:new)
         post '/categories', params: { category: { name: 'My Category' } }
-        expect(response).to redirect_to(categories_path)
+        expect(response).to redirect_to(console_categories_path)
       end
     end
 
@@ -67,17 +69,17 @@ RSpec.describe '/categories', type: :request do
     context 'with valid parameters' do
       it 'renders a successfully edit response and update successfully' do
         category = Category.create! valid_attributes
-        get edit_category_url(category)
+        get edit_console_category_url(category)
         expect(response).to be_successful
-        patch category_url(category), params: { category: new_attributes }
-        expect(response).to redirect_to(edit_category_url(category))
+        patch console_category_url(category), params: { category: new_attributes }
+        expect(response).to redirect_to(edit_console_category_url(category))
       end
     end
 
     context 'with invalid  parameters' do
       it "renders a successful response (i.e. to display the 'edit' template)" do
         category = Category.create! valid_attributes
-        patch category_url(category), params: { category: invalid_attributes }
+        patch console_category_url(category), params: { category: invalid_attributes }
         expect(response).to have_http_status(422)
       end
     end
@@ -87,14 +89,14 @@ RSpec.describe '/categories', type: :request do
     it 'destroys the requested category' do
       category = Category.create! valid_attributes
       expect {
-        delete category_url(category)
+        delete console_category_url(category)
       }.to change(Category, :count).by(-1)
     end
 
     it 'redirects to the categories list' do
       category = Category.create! valid_attributes
-      delete category_url(category)
-      expect(response).to redirect_to(categories_url)
+      delete console_category_url(category)
+      expect(response).to redirect_to(console_categories_url)
     end
   end
 end

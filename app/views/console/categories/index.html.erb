@@ -1,0 +1,27 @@
+
+<div class="container">
+<div class="category_list">
+<div class="table-users">
+   <div class="header">カテゴリー一覧</div>
+   <table cellspacing="0">
+      <tr>
+         <th>Id</th>
+         <th><%= t("categories.table.category_name") %></th>
+         <th><%= t("categories.table.category_image") %></th>
+         <th><%= t("categories.table.category_edit") %></th>
+         <th><%= t("categories.table.category_detail") %></th>
+         <th><%= t("categories.table.category_delete") %></th>
+      </tr>
+      <tr <% @categories.each do |category| %>>
+        <td> <%= category.id %></td>
+        <td> <%= category.name %></td>
+        <td> <%= image_tag category.image, size: "120x60", alt: "Edit Entry" %></td> 
+        <td> <%= link_to t("view.operation.edit"), edit_console_category_path(category) %> </td>
+        <td> <%= link_to t("view.operation.detail"), console_category_path(category) %> </td>
+        <td><%= button_to t("view.operation.destroy"), console_category_path(category), method: 'delete', data: {confirm: t("controller.are_you_sure", text: category.name)} , class: 'button_delete' %></td>       
+       </tr <% end %>> 
+   </table>
+</div>
+<%= paginate @categories  %>
+</div>
+</div>

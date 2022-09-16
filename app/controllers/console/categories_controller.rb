@@ -1,8 +1,8 @@
-class CategoriesController < ApplicationController
-  before_action :set_category, only: %i[show edit update destroy]
+class Console::CategoriesController < Console::ApplicationController
+  before_action :set_category, except: %i[index new create]
 
   def index
-    @categories = Category.all.page(params[:page]).per(3)
+    @categories = Category.all.page params[:page]
   end
 
   def new
@@ -18,9 +18,11 @@ class CategoriesController < ApplicationController
     @category = Category.new category_params
     respond_to do |format|
       if @category.save
-        format.html { redirect_to categories_url, notice: t('controller.notification.success') }
+        flash[:success] = t('controller.notification.success')
+        format.html { redirect_to console_categories_url }
         format.json { render :index, status: :created, location: @category }
       else
+        flash[:danger] = t('controller.notification.danger')
         format.html { render :new, status: :unprocessable_entity }
         format.json { render json: @category.errors, status: :unprocessable_entity }
       end
@@ -31,9 +33,11 @@ class CategoriesController < ApplicationController
   def update
     respond_to do |format|
       if @category.update(category_params)
-        format.html { redirect_to edit_category_url(@category), notice: t('controller.notification.success') }
+        flash[:success] = t('controller.notification.success')
+        format.html { redirect_to edit_console_category_url(@category) }
         format.json { render :edit, status: :ok, location: @category }
       else
+        flash[:danger] = t('controller.notification.danger')
         format.html { render :edit, status: :unprocessable_entity }
         format.json { render json: @category.errors, status: :unprocessable_entity }
       end
@@ -44,7 +48,8 @@ class CategoriesController < ApplicationController
   def destroy
     @category.destroy!
     respond_to do |format|
-      format.html { redirect_to categories_url, notice: t('controller.notification.success') }
+      flash[:success] = t('controller.notification.success')
+      format.html { redirect_to console_categories_url }
       format.json { head :no_content }
     end
   end
@@ -59,3 +64,4 @@ class CategoriesController < ApplicationController
       @category = Category.find(params[:id])
     end
 end
+

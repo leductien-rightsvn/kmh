@@ -56,8 +56,9 @@ ja:
     signout: ログアウト
     versions: 履歴
     notification:
-      success: 成功
-      failure: 失敗
+      success: 成功したアクション
+      failure: 失敗したアクション
+      warning: 危険なアクション
   layouts:
     application:
       <<: *controller
