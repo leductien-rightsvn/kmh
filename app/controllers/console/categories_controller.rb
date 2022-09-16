@@ -64,4 +64,3 @@ class Console::CategoriesController < Console::ApplicationController
       @category = Category.find(params[:id])
     end
 end
-
