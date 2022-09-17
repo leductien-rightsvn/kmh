@@ -33,5 +33,10 @@ module Kmh
 
     # Don't generate system test files.
     config.generators.system_tests = nil
+
+    # Add hosts
+    ENV['ACCESSABLE_HOSTS'].to_s.split(',').each do |host|
+      config.hosts << host
+    end
   end
 end
