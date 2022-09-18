@@ -12,6 +12,8 @@ ja:
       category: カテゴリー
       discount: 割引
       order: 注文
+      role: 役割
+      users_role: ユーザー_役割
     attributes:
       base: &base
         id: ID
@@ -39,3 +41,8 @@ ja:
         money: お金
         password: パスワード
         address: 宛先
+      user: 
+        email: メールアドレス
+        name: 氏名
+      role:
+        name: 氏名
