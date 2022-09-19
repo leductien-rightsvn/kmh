@@ -114,7 +114,6 @@ td, th {
   color: darken($baseColor, 10%);
   padding: $padding; 
 }
-
 td {
   text-align: center;
   vertical-align: middle;
@@ -124,12 +123,10 @@ td {
   text-align: left;
 }
 }
-
 th { 
   background-color: lighten($baseColor, 50%);
   font-weight: 300;
 }
-
 tr {     
   &:nth-child(2n) { background-color: white; }
   &:nth-child(2n+1) { background-color: lighten($baseColor, 55%) }
@@ -138,14 +135,12 @@ tr {
 
 @media screen and (max-width: 700px) {   
 table, tr, td { display: block; }
-
 tr {
   padding: $padding 0;
   position: relative;
   &:first-child { display: none; }
 }
 }
-
 @media screen and (max-width: 500px) {
 .header {
   background-color: transparent;
@@ -155,7 +150,6 @@ tr {
   padding: 0;
   text-shadow: 2px 2px 0 rgba(0,0,0,0.1);
 }
-
 img {
   border: 3px solid;
   border-color: lighten($baseColor, 50%);
@@ -163,7 +157,6 @@ img {
   margin: 0.5rem 0;
   width: $imageBig;
 }
-
 tr {
   background-color: white !important;
   border: 1px solid lighten($baseColor, 20%);
@@ -172,7 +165,6 @@ tr {
   margin: 0.5rem 0;
   padding: 0;
 }
-
 .table-users { 
   border: none; 
   box-shadow: none;
@@ -255,16 +247,7 @@ a{
   -webkit-animation-duration: 1s;
   -webkit-animation-timing-function: linear;
   -webkit-animation-iteration-count: infinite;
-  
-  -moz-animation-name: flash;
-  -moz-animation-duration: 1s;
-  -moz-animation-timing-function: linear;
-  -moz-animation-iteration-count: infinite;
-  
-  animation-name: flash;
-  animation-duration: 1s;
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
+
 }
 
 @-moz-keyframes flash {  
