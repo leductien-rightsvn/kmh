@@ -8,14 +8,6 @@ gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 
 gem 'rails-controller-testing'
 
-gem 'simple_form'
-
-# paging
-gem 'kaminari'
-
-# nice interface for pagination
-gem 'bootstrap-kaminari-views'
-
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 

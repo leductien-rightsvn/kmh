@@ -22,25 +22,25 @@ jobs:
         SUBDOMAIN_CONSOLE: console
         ACCESSABLE_HOSTS: .lvh.me
     steps:
-      - uses: actions/checkout@v3
-      - name: Restore cache vendor/bundle
-        uses: actions/cache@v3
-        with:
-          path: vendor/bundle
-          key: ${{ env.cache-version }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
-      - name: Use Node.js
-        uses: actions/setup-node@v3
-        with:
-          node-version: 16.17.0
-      - name: Build
-        run: |
-          gem install bundler
-          bundle config set deployment 'true'
-          bundle install --jobs 4 --retry 3
-          bundle exec rails db:create db:schema:load
-      - name: Run rubocop
-        run: |
-          bundle exec rubocop
-      - name: Run test
-        run: |
-          bundle exec rspec --format progress
+    - uses: actions/checkout@v3
+    - name: Restore cache vendor/bundle
+      uses: actions/cache@v3
+      with:
+        path: vendor/bundle
+        key: ${{ env.cache-version }}-bundle-${{ hashFiles('**/Gemfile.lock') }}
+    - name: Use Node.js
+      uses: actions/setup-node@v3
+      with:
+        node-version: 16.17.0
+    - name: Build
+      run: |
+        gem install bundler
+        bundle config set deployment 'true'
+        bundle install --jobs 4 --retry 3
+        bundle exec rails db:create db:schema:load
+    - name: Run rubocop
+      run: |
+        bundle exec rubocop
+    - name: Run test
+      run: |
+        bundle exec rspec --format progress
