@@ -65,7 +65,6 @@ RSpec.describe 'Console::Categories', type: :request do
     let(:new_attributes) {
       { name: 'Superman' }
     }
-
     context 'with valid parameters' do
       it 'renders a successfully edit response and update successfully' do
         category = Category.create! valid_attributes
