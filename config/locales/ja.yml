@@ -1,4 +1,11 @@
 ja:
+  views:
+    pagination:
+      first: "« 第一番"
+      last: "最終 »"
+      previous: "‹ 前"
+      next: "後ろ ›"
+      truncate: "…"
   activerecord:
     models:
     attributes:

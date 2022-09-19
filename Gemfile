@@ -9,6 +9,15 @@ gem 'rails', '~> 7.0.3', '>= 7.0.3.1'
 # The original asset pipeline for Rails [https://github.com/rails/sprockets-rails]
 gem 'sprockets-rails'
 
+#simple form
+gem 'simple_form'
+
+# paging
+gem 'kaminari'
+
+# nice interface for pagination
+gem 'bootstrap-kaminari-views'
+
 # Use mysql as the database for Active Record
 gem 'mysql2', '~> 0.5'
 
