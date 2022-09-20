@@ -40,3 +40,78 @@ button {
   align-items: center;
   display: flex;
 }
+
+.bg-none {
+  background-color: transparent;
+}
+
+.bg1 {
+  background-color: #717fe0;
+}
+
+.bg3 {
+  background-color: #222;
+}
+
+.input1 {
+  background-color: white;
+  width: 100%;
+}
+
+.stext-101 {
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  line-height: 1.466667;
+  text-transform: uppercase;
+}
+
+.stext-107 {
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 13px;
+  line-height: 1.923;
+}
+
+.stext-107 {
+  font-family: Poppins-Regular;
+  font-size: 13px;
+  line-height: 1.923;
+}
+
+input, textarea, label {
+  display: block;
+  outline: none;
+  border: none;
+}
+
+.bor1 {
+  border-radius: 23px;
+}
+
+.size-103 {
+  min-width: 179px;
+  height: 46px;
+}
+
+.stext-101 {
+  font-family: Poppins-Medium;
+  font-size: 15px;
+  line-height: 1.466667;
+  text-transform: uppercase;
+}
+
+ul, li {
+  margin: 0px;
+  list-style-type: none;
+}
+
+ul {
+  padding-left: 0rem;
+}
+
+.cl7 {
+  color: #b2b2b2;
+}
+
+.cl0 {
+  color: #fff;
+}
