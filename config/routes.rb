@@ -3,7 +3,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
   # root "articles#index"
-  constraints subdomain: ENV['SUBDOMAIN_CONSOLE'] do
+  constraints subdomain: ENV.fetch('SUBDOMAIN_CONSOLE', nil) do
     scope module: :console, as: :console do
       root to: 'dashboard#index'
     end
