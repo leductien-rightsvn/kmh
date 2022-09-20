@@ -179,9 +179,17 @@
   line-height: 1.923;
 }
 
-.bg-none {background-color: transparent;}
-.bg1 {background-color: #717fe0;}
-.bg3 {background-color: #222;}
+.bg-none {
+  background-color: transparent;
+}
+
+.bg1 {
+  background-color: #717fe0;
+}
+
+.bg3 {
+  background-color: #222;
+}
 
 .input1 {
   background-color: white;
@@ -203,7 +211,6 @@ input, textarea, label {
   outline: none;
   border: none;
 }
-
 
 .bor1 {
   border-radius: 23px;
@@ -233,7 +240,9 @@ li {
 
 ol,
 ul {
-padding-left: 0rem;
+  padding-left: 0rem;
 }
 
-.cl0 {color: #fff;}
+.cl0 {
+  color: #fff;
+}
