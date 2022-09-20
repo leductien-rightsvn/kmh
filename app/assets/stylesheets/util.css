@@ -16,7 +16,9 @@ button {
   cursor: pointer;
 }
 
-.h-full {height: 100%;}
+.h-full {
+  height: 100%;
+}
 
 .trans-04 {
   -webkit-transition: all 0.4s;
