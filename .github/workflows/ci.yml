@@ -19,6 +19,8 @@ jobs:
         KMH_DATABASE_USERNAME: root
         KMH_DATABASE_PASSWORD: P@ssw0rd!
         KMH_DATABASE_SOCKET: /var/run/mysqld/mysqld.sock
+        SUBDOMAIN_CONSOLE: console
+        ACCESSABLE_HOSTS: .lvh.me
     steps:
     - uses: actions/checkout@v3
     - name: Restore cache vendor/bundle
