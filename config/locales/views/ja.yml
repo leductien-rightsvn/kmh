@@ -16,3 +16,17 @@ ja:
     dashboard:
       index:
         message: "Comming soon!"
+      list: 一覧
+      detail: 詳細
+      list_detail: 詳細一覧
+    categories:
+      title: カテゴリー管理
+      index:
+        title: カテゴリー一覧
+      show:
+        title: カテゴリー詳細
+        text: これは、表示するために選択した当社の Web サイトのカテゴリです。 サイトには、探索 する必要がある多くのカテゴリがあります。当サイトでその楽しさを体験してください。どうもありがとうございました
+      edit:
+        title: カテゴリー編集
+      new:
+        title: カテゴリー登録

@@ -1,7 +1,9 @@
 Rails.application.routes.draw do
   # Define your application routes per the DSL in https://guides.rubyonrails.org/routing.html
 
-  constraints subdomain: 'console' do
+  # Defines the root path route ("/")
+  # root "articles#index"
+  constraints subdomain: ENV['SUBDOMAIN_CONSOLE'] do
     scope module: :console, as: :console do
       root to: 'dashboard#index'
     end

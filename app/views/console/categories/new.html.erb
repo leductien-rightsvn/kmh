@@ -1,9 +1,10 @@
 <div class="container" >
-<div class="category_form">
-  <h2><%= t("categories.form.newCategory_title") %></h2>
-  <%= render "form" %>
-</div>
-<div class="category_image">
-  <%= image_tag("product.png", size: "390x390", alt: "Edit Entry", class: "image_category") %>
-</div>
+  <div class="category_form">
+    <h2><%= t(".title") %></h2>
+    <%= render "form" %>
+    <%= link_to t("view.operation.list"), console_categories_path %>
+  </div>
+  <div class="category_image">
+    <%= image_tag("product.png", size: "390x390", alt: "Edit Entry", class: "image_category") %>
+  </div>
 </div>  

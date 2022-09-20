@@ -1,9 +1,6 @@
 <%= simple_form_for [:console, @category] do |f| %>
-    <%= f.input :name %>
-    <%= f.file_field :image %> 
-    <%= f.submit %>
-    <br>
-    <%= link_to t("view.operation.new"), new_console_category_path %>
-    <%= link_to t("categories.form.listCategory_title"), console_categories_path %>
+  <%= f.input :name %>
+  <%= f.file_field :image %> 
+  <%= f.submit %>
+  <br>
 <% end %>
-
