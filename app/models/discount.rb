@@ -15,9 +15,6 @@ class Discount < ApplicationRecord
   validates :name, presence: true, length: { maximum: 255 }
   validates :code, presence: true, length: { maximum: 255 }
   validates :money, presence: true
-
-  # validates :start_date, presence: true
   validates :start_date, presence: true
-
   validates :end_date, comparison: { greater_than: :start_date }, presence: true
 end
