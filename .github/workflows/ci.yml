@@ -41,6 +41,9 @@ jobs:
     - name: Run rubocop
       run: |
         bundle exec rubocop
+    - name: Run Rails best practices
+      run: |
+        bundle exec rails_best_practices
     - name: Run test
       run: |
         bundle exec rspec --format progress
