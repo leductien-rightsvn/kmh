@@ -29,6 +29,6 @@ FactoryBot.define do
     description { FFaker::AWS.product_description }
     origin { FFaker::Address.country }
     color { FFaker::Color.name }
-    category { 1 }
+    category
   end
 end

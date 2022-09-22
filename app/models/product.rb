@@ -8,7 +8,7 @@
 #  name        :string(255)      not null
 #  origin      :string(255)
 #  price       :float(24)        not null
-#  quantity    :integer     uuut     not null
+#  quantity    :integer          not null
 #  created_at  :datetime         not null
 #  updated_at  :datetime         not null
 #  category_id :bigint           not null
@@ -22,7 +22,6 @@
 #  fk_rails_...  (category_id => categories.id)
 #
 class Product < ApplicationRecord
-  # associations
   belongs_to :category
   has_many_attached :images
 

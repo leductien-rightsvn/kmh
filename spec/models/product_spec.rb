@@ -31,7 +31,7 @@ RSpec.describe Product, type: :model do
   describe 'Validation' do
     # name
     it { is_expected.to validate_presence_of(:name) }
-    it { should validate_length_of(:name).is_at_most(255) }
+    it { is_expected.to validate_length_of(:name).is_at_most(255) }
 
     # price
     it { is_expected.to validate_presence_of(:price) }
@@ -42,9 +42,8 @@ RSpec.describe Product, type: :model do
     it { is_expected.to validate_numericality_of(:quantity).is_greater_than(0) }
     it { is_expected.to validate_numericality_of(:quantity).only_integer }
 
-    # quantity
-    it { should validate_length_of(:description).is_at_most(255) }
-    it { should validate_length_of(:origin).is_at_most(255) }
-    it { should validate_length_of(:color).is_at_most(255) }
+    it { is_expected.to validate_length_of(:description).is_at_most(255) }
+    it { is_expected.to validate_length_of(:origin).is_at_most(255) }
+    it { is_expected.to validate_length_of(:color).is_at_most(255) }
   end
 end
