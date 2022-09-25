@@ -59,46 +59,6 @@ input, textarea, label {
   border: none;
 }
 
-.bor1 {
-  border-radius: 23px;
-}
-
-.size-103 {
-  min-width: 179px;
-  height: 46px;
-}
-
-.stext-101 {
-  font-family: Poppins-Medium;
-  font-size: 15px;
-  line-height: 1.466667;
-  text-transform: uppercase;
-}
-
-.stext-102 {
-  font-family: Poppins-Regular;
-  font-size: 14px;
-  line-height: 1.7;
-}
-
-ul, li {
-  margin: 0px;
-  list-style-type: none;
-}
-
-li {
-  display: list-item;
-  text-align: -webkit-match-parent;
-}
-
-ol,ul {
-  padding-left: 0rem;
-}
-
-.cl0 {
-  color: #fff;
-}
-
 .flex-c-m {
   justify-content: center;
   -ms-align-items: center;
@@ -132,4 +92,16 @@ ol,ul {
   -o-transition: all 0.9s;
   -moz-transition: all 0.9s;
   transition: all 0.9s;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.pt-8{
+  padding-top:80px;
+}
+
+.pt-13{
+  padding-top:130px;
 }
