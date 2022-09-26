@@ -181,6 +181,7 @@
 .header-main-menu > li > .header-sub-menu {
   top:100%;
   left: 0;
+  z-index:9;
 }
 <<<<<<< HEAD
 
@@ -240,4 +241,29 @@
 .header-sub-menu > li:hover > a {
   color: #6c7ae0;
   text-decoration: none;
+}
+
+.carousel-inner h3 {
+  position: absolute;
+  top:30%;
+  left:20%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:38px;
+  transform: translate(-20%, -30%);
+}
+
+.carousel-inner h1 {
+  position: absolute;
+  font-weight: bold;
+  top:40%;
+  left:20%;
+  font-size: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transform: translate(-20%, -40%);
+}
+
+.carousel-inner .home-slide-button {
+  position: absolute;
+  top:42%;
+  left:20%;
 }
