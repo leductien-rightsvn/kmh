@@ -8,6 +8,7 @@ ja:
           has_many: "%{record}が存在しているので削除できません"
     models:
       user: ユーザー
+      discount: 割引
     attributes:
       base: &base
         id: ID
@@ -17,3 +18,7 @@ ja:
         <<: *base
         name: 氏名
         email: メールアドレス
+      discount:
+        name: 氏名
+        code: コード
+        money: お金
