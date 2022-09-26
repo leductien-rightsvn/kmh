@@ -58,9 +58,186 @@
   text-decoration-color: #717fe0;
 }
 
-.block1-txt:hover .block1-name,
-.block1-txt:hover .block1-info {
-  color: #fff;
+.homecate-border-info{
+  font-size:15px;
+  color:rgb(32, 32, 32);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top:5px;
+}
+
+.homecate-border img {
+  width: 100%;
+}
+
+.homecate-border-title {
+  font-family: Poppins-Regular;
+  font-size: 28px;
+  line-height: 1.2857;
+  color:black;
+  text-decoration:none
+}
+
+.home-single-product {
+  margin-bottom: 26px;
+}
+
+.home-single-product .part-1 {
+  position: relative;
+  height: 390px;
+  max-height: 390px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.home-single-product .part-1 ul {
+  position: absolute;
+  bottom: -41px;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+  transform: translate(-50%, 0);
+}
+
+.home-single-product .part-1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.home-single-product:hover .part-1::before {
+  transform: scale(1.2,1.2) rotate(5deg);
+}
+
+.home-single-product .part-1 .discount,
+.home-single-product .part-1 .new {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #ffffff;
+  background-color: #fe302f;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.home-single-product .part-1 .new {
+  left: 0;
+  background-color: #444444;
+}
+
+.home-single-product:hover .part-1 ul {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.home-single-product .part-1 ul li {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.home-single-product .part-1 ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #444444;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.home-single-product .part-1 ul li a:hover {
+  color: #fe302f;
+}
+
+.home-single-product .part-2 .home-single-product-title {
+  font-size: 1.1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.home-single-product .part-2 h4 {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.home-single-product-load {
+  width:170px;
+  border-radius:40px;
+  background-color:#ebe7e7;
+}
+
+.home-single-product-load a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color:black;
+  text-decoration:none;
+  font-family: 'Times New Roman', Times, serif;
+  min-width: 179px;
+  height: 46px;
+}
+
+.home-single-product-load a:hover {
+  color:#fff;
+}
+
+.home-single-product-load:hover {
+  background-color: #444444;
+}
+
+.home-single-product-view {
+  width:120px;
+  border-radius:40px;
+  background-color:#ebe7e7;
+}
+
+.home-single-product-view a{
+  font-size: 13px;
+  text-transform: uppercase;
+  color:black;
+  text-decoration:none;
+  font-family: 'Times New Roman', Times, serif;
+  min-width: 90px;
+  height: 35px;
+}
+
+.home-single-product-view:hover {
+  background-color:#444444;
+  transition: all 0.9s;
+}
+
+.home-single-product-view a:hover {
+  color:white;
+}
+
+.home-product-overview {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 36px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.home-cate-button {
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+.home-cate-button a {
+  font-size: 13px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:black;
+  text-decoration: none;
+}
+
+.home-cate-button a:hover {
+  color:#4558d8;
 }
 
 .ab-t-l {

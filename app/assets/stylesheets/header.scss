@@ -4,31 +4,19 @@
   position: relative;
   transition: all 0.3s;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-top-bar {
   height: 40px;
   background-color: #222;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-left-top-bar {
   font-family: Poppins-Regular;
   font-size: 12px;
   line-height: 1.8;
   color: #b2b2b2;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-right-top-bar a {
   font-family: Poppins-Regular;
   font-size: 12px;
@@ -37,7 +25,6 @@
   color: #b2b2b2;
   border-right: 1px solid rgba(255,255,255,0.3);
 }
-<<<<<<< HEAD
 
 .header-right-top-bar a:first-child {
   border-left: 1px solid rgba(255,255,255,0.3);
@@ -47,97 +34,55 @@
   color: #6c7ae0;
 }
 
-.header-wrap-menu-desktop {
-  z-index: 1100;
-  background-color: #fff;
-=======
-  
-.header-right-top-bar a:first-child {
-  border-left: 1px solid rgba(255,255,255,0.3);
-}
-  
-.header-right-top-bar a:hover {
-  color: #6c7ae0;
-}
-  
 .header-wrap-menu-desktop {
   z-index: 1100;
   background-color: #eae9e5;
->>>>>>> 88a83ff (add content-home and css)
   width: 100%;
   height: 84px;
   top: 40px;
   left: 0px; 
   transition: height 0.3s, background-color 0.3s;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-limiter-menu-desktop {
   height: 100%;
   display: flex;
   align-items: center;
   background-color: transparent;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-logo {
   display: flex;
   align-items: center;
   height: 65%;
   margin-right: 55px;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-logo img {
   max-width: 100%;
   max-height: 100%;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-menu-desktop {
   display: flex;
   align-items: center;
   height: 100%;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-main-menu {
   list-style-type: none;
   margin: 0;
   display: flex;
   align-items: center;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-main-menu > li {
   display: block;
   position: relative;
   padding: 20px 10px 20px 0px;
   margin: 0px 4px 0px 14px;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-main-menu > li > a {
   font-family: Poppins-Medium;
   font-size: 14px;
@@ -145,11 +90,7 @@
   padding: 5px 0px;
   transition: all 0.4s;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-sub-menu {
   list-style-type: none;
   position: absolute;
@@ -163,31 +104,19 @@
   visibility: hidden;
   opacity: 0; 
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-sub-menu li {
   position: relative;
   background-color: transparent;
   transition: all 0.4s;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-main-menu > li > .header-sub-menu {
   top:100%;
   left: 0;
   z-index:9;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-sub-menu a {
   font-family: Poppins-Regular;
   font-size: 14px;
@@ -198,46 +127,26 @@
   width: 100%;
   transition: all 0.4s;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-main-menu > li:hover > a {
   text-decoration: none;
   color: #6c7ae0;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-main-menu > li:hover > .header-sub-menu {
   visibility: visible;
   opacity: 1;
 }
-<<<<<<< HEAD
 
-=======
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-sub-menu li:hover > .header-sub-menu {
   visibility: visible;
   opacity: 1;
 } 
-<<<<<<< HEAD
 
 .header-sub-menu li:hover {
   background-color: transparent;
 }
 
-=======
-  
-.header-sub-menu li:hover {
-  background-color: transparent;
-}
-  
->>>>>>> 88a83ff (add content-home and css)
 .header-sub-menu > li:hover > a {
   color: #6c7ae0;
   text-decoration: none;
