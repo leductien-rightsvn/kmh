@@ -16,49 +16,6 @@ button {
   cursor: pointer;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.stext-101 {
-  font-family: Poppins-Medium;
-  font-size: 15px;
-  line-height: 1.466667;
-  text-transform: uppercase;
-}
-
-.stext-107 {
-  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 13px;
-  line-height: 1.923;
-}
-
-.bg-none {background-color: transparent;}
-.bg0 {background-color: #fff;}
-.bg1 {background-color: #717fe0;}
-.bg3 {background-color: #222;}
-
-.input1 {
-  background-color: white;
-  width: 100%;
-}
-
-.stext-107 {
-  font-family: Poppins-Regular;
-  font-size: 13px;
-  line-height: 1.923;
-}
-
-.cl7 {
-  color: #b2b2b2;
-}
-
-input, textarea, label {
-  display: block;
-  outline: none;
-  border: none;
-}
-
 .flex-c-m {
   justify-content: center;
   -ms-align-items: center;
@@ -92,10 +49,6 @@ input, textarea, label {
   -o-transition: all 0.9s;
   -moz-transition: all 0.9s;
   transition: all 0.9s;
-}
-
-.h-full {
-  height: 100%;
 }
 
 .pt-8{
