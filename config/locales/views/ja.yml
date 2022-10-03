@@ -11,7 +11,9 @@ ja:
       export: エクスポート
       import: インポート
       back: 戻る
-
+      list: 一覧
+      detail: 詳細
+      list_detail: 詳細一覧
   console:
     dashboard:
       index:
