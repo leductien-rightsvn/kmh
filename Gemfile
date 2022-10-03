@@ -82,4 +82,6 @@ group :development do
 end
 
 gem 'bootstrap', '~> 5.2.0'
+gem 'font-awesome-sass', '~> 6.2.0'
 gem 'jquery-rails'
+gem 'sass-rails'
