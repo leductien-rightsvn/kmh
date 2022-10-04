@@ -21,7 +21,12 @@
 require 'rails_helper'
 
 RSpec.describe User, type: :model do
-  describe 'Validattions' do
+  describe 'associations' do
+    it { is_expected.to have_many(:comments).dependent(:destroy) }
+  end
+
+  describe 'Validations' do
+    it { is_expected.to validate_presence_of(:email) }
     it { is_expected.to validate_presence_of(:name) }
     it { is_expected.to validate_length_of(:address).is_at_most(255) }
     it { is_expected.to have_many(:orders).dependent(:destroy) }

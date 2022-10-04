@@ -12,6 +12,7 @@ ja:
       category: カテゴリー
       discount: 割引
       order: 注文
+      comment: コメント
     attributes:
       base: &base
         id: ID
@@ -34,8 +35,12 @@ ja:
         name: 氏名
         image: 写真
       discount:
+        <<: *base
         name: 氏名
         code: コード
         money: お金
         password: パスワード
         address: 宛先
+      comment:
+        <<: *base
+        content: コンテンツ
