@@ -50,8 +50,7 @@ ActiveRecord::Schema[7.0].define(version: 2022_10_03_044720) do
   create_table "comments", charset: "utf8mb4", collation: "utf8mb4_bin", force: :cascade do |t|
     t.bigint "user_id", null: false
     t.bigint "product_id", null: false
-    t.string "content"
-    t.integer "status"
+    t.string "content", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.index ["product_id"], name: "index_comments_on_product_id"

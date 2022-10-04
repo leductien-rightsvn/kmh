@@ -3,8 +3,7 @@
 # Table name: comments
 #
 #  id         :bigint           not null, primary key
-#  content    :string(255)
-#  status     :integer
+#  content    :string(255)      not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  product_id :bigint           not null
@@ -25,6 +24,5 @@ FactoryBot.define do
     user
     product
     content { FFaker::AWS.product_description }
-    status { 1 }
   end
 end

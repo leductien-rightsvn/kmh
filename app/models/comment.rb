@@ -3,8 +3,7 @@
 # Table name: comments
 #
 #  id         :bigint           not null, primary key
-#  content    :string(255)
-#  status     :integer
+#  content    :string(255)      not null
 #  created_at :datetime         not null
 #  updated_at :datetime         not null
 #  product_id :bigint           not null
@@ -23,4 +22,5 @@
 class Comment < ApplicationRecord
   belongs_to :user
   belongs_to :product
+  validates :content, presence: true, length: { maximum: 255 }
 end
