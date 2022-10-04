@@ -1,0 +1,6 @@
+<%= simple_form_for [:console, @category] do |f| %>
+  <%= f.input :name %>
+  <%= f.file_field :image %> 
+  <%= f.submit %>
+  <br>
+<% end %>

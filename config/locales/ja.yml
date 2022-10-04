@@ -55,6 +55,10 @@ ja:
       placeholder: キーワード
     signout: ログアウト
     versions: 履歴
+    notification:
+      success: 成功したアクション
+      failure: 失敗したアクション
+      warning: 危険なアクション
   layouts:
     application:
       <<: *controller
@@ -168,6 +172,7 @@ ja:
       create: 登録
       submit: 保存
       update: 更新
+
   number:
     currency:
       format:

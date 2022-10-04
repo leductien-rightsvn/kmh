@@ -1,0 +1,13 @@
+<% if flash.present? %>
+  <div class="flash">
+    <% if flash[:success] %>
+      <p style="color: green"><%= t('controller.notification.success') %></p>
+    <% end %>
+    <% if flash[:warning] %>
+      <p style="color: yellow"><%= t('controller.notification.warning') %></p>
+    <% end %>
+    <% if flash[:danger] %>
+      <p style="color: red"><%= t('controller.notification.failure') %></p>
+    <% end %>
+  </div>
+<% end %>

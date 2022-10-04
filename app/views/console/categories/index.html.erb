@@ -1,0 +1,22 @@
+<div class="container">
+  <div class="category_list">
+    <div class="table-categories">
+      <div class="category-table-header">
+        <%= t(".title") %>
+        <%= link_to t("view.operation.new"), new_console_category_path , class: 'link_category' %></td>
+      </div>
+      <table cellspacing="0" class="table table-hover">
+        <tr>
+          <th>Id</th>
+          <th><%= Category.human_attribute_name(:name) %></th>
+          <th><%= Category.human_attribute_name(:image) %></th>
+          <th></th>
+          <th></th>
+          <th></th>
+        </tr>
+        <%= render(partial: "category", collection: @categories, as: "category") || "There's no category to be displayed" %>
+      </table>
+    </div>
+    <%= paginate @categories  %>
+  </div>
+</div>
