@@ -12,6 +12,8 @@
 #  updated_at :datetime         not null
 #
 class Discount < ApplicationRecord
+  has_many :orders, dependent: :destroy
+
   validates :name, presence: true, length: { maximum: 255 }
   validates :code, presence: true, length: { maximum: 255 }
   validates :money, presence: true
