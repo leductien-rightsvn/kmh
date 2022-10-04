@@ -32,7 +32,10 @@ ja:
       category:
         <<: *base
         name: 氏名
+        image: 写真
       discount:
         name: 氏名
         code: コード
         money: お金
+        password: パスワード
+        address: 宛先

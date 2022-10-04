@@ -14,6 +14,7 @@
       <%= render "layouts/console/content_header" %>
       <div id="contain" class="container">
         <%= yield %>
+        <%= render "layouts/console/flashmessages", flash: flash %>
       </div>
       <%= render "layouts/console/main_footer" %>
     </section>
