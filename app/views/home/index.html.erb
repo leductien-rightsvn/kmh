@@ -1,3 +1,93 @@
 <div class="container_home">
+  <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active" data-bs-interval="10000">   
+        <%= image_tag("slide-04.jpg", size: "300x850", alt: "Edit Entry", class: "d-block w-100") %>
+        <h3>Women Collection 2022</h3>
+        <h1>NEW SEASON</h1>
+        <button class="home-slide-button trans-09"> 
+          <a href="#" class="trans-09">Shop Now</a>
+        </button>
+        <div class="carousel-caption d-none d-md-block"></div>
+      </div>
+      <div class="carousel-item" data-bs-interval="2000">
+        <%= image_tag("slide-03.jpg", size: "300x850", alt: "Edit Entry", class: "d-block w-100") %>
+        <h3>Man Clothes - New Season</h3>
+        <h1>NEW FASHION</h1>
+        <button class="home-slide-button trans-09">
+          <a href="#" class="trans-09">Shop Now</a>
+        </button>
+        <div class="carousel-caption d-none d-md-block"></div>
+      </div>
+      <div class="carousel-item">
+        <%= image_tag("slide-02.jpg", size: "300x850", alt: "Edit Entry", class: "d-block w-100") %>
+        <h3>Special Accessories 2022</h3>
+        <h1>NEW ARRIVALS</h1>
+        <button class="home-slide-button trans-09">
+          <a href="#" class="trans-09">Shop Now</a>
+        </button>
+        <div class="carousel-caption d-none d-md-block"></div>
+      </div>
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+  <span class="visually-hidden">Next</span>
+  </button>
+</div>
 
-</div> 
+<div class="bg0 pt-8">
+  <div class="container">
+    <div class="row">
+      <%= render(partial: "top3_category", collection: @categories_top3, as: "category") || "There's no category to be displayed" %>
+    </div>
+   </div>
+</div>
+
+<section class="pt-8 p-b-140">
+  <div class="container">
+    <div class="pb-3">
+      <h3 class="home-product-overview">Product Overview</h3>
+    </div>
+    <div class="flex-w flex-sb-m">
+      <div class="flex-w flex-l-m">
+        <button class="home-cate-button">
+          <a href="#" class="trans-09">All Products</a>
+        </button>
+        <button class="home-cate-button trans-04">
+          <a href="#" class="trans-09">Women</a>
+        </button>
+        <button class="home-cate-button trans-04">
+          <a href="#" class="trans-09">Men</a>
+        </button>
+        <button class="home-cate-button trans-04">
+          <a href="#" class="trans-09">Bag</a>
+        </button>
+        <button class="home-cate-button trans-04">
+          <a href="#" class="trans-09">Shoes</a>
+        </button>
+        <button class="home-cate-button trans-04">
+          <a href="#" class="trans-09">Watches</a>
+        </button>
+      </div>
+    </div>
+
+    <div class="row pt-5">
+      <%= render(partial: "products", collection: @products, as: "product") || "There's no product to be displayed" %>
+    </div>
+
+    <div class="d-flex justify-content-center">
+      <a href="#" class="flex-c-m trans-09"><%= paginate @products %></a>
+    </div>
+    <br/>
+  </div>
+</section>

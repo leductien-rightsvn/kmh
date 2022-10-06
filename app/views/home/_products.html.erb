@@ -1,0 +1,16 @@
+<div class="col-xl-3">
+  <div class="home-single-product">
+    <div class="part-1">                         
+      <%= image_tag(url_for(product.images.first), size: "320x450", alt: "Edit Entry") %>             
+      <ul>
+        <div class="home-single-product-view">
+          <a href="#" class="flex-c-m trans-09">Quick view</a>
+        </div>
+      </ul>
+    </div>
+    <div class="part-2">
+      <h3 class="home-single-product-title"><%= product.name %></h3>
+      <h4>$<%= product.price %></h4>
+    </div>
+  </div>
+</div>

@@ -11,3 +11,238 @@
   max-width: 1200px;
 }
 }
+
+.homecate-border {
+  position: relative;
+  border: 1px solid #e6e6e6;
+}
+
+.homecate-border-txt-child2 {
+  border-bottom: 2px solid #fff;
+  overflow: hidden;
+  width:80px;
+  -webkit-transform: scaleX(0);
+  -moz-transform: scaleX(0);
+  -ms-transform: scaleX(0);
+  -o-transform: scaleX(0);
+  transform: scaleX(0);
+}
+
+.homecate-border-link {
+  font-size: 15px;
+  text-transform: uppercase;
+  color:#fff;
+  text-decoration:none;
+  font-family: 'Times New Roman', Times, serif;
+  -webkit-transform: translateY(250%);
+  transform: translateY(250%);
+}
+
+.homecate-border-txt:hover {
+  background-color: rgba(103,117,214,0.8);
+  width: 100%; 
+  height: 100%;
+}
+
+.homecate-border-txt:hover .homecate-border-txt-child2 {
+  -webkit-transform: scaleX(1);
+  -moz-transform: scaleX(1);
+  -ms-transform: scaleX(1);
+  -o-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+.homecate-border-txt:hover .homecate-border-link {
+  transform: translateY(0%);
+  text-decoration:none;
+  text-decoration-color: #717fe0;
+}
+
+.homecate-border-info{
+  font-size:15px;
+  color:rgb(32, 32, 32);
+  font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  padding-top:5px;
+}
+
+.homecate-border img {
+  width: 100%;
+}
+
+.homecate-border-title {
+  font-family: Poppins-Regular;
+  font-size: 28px;
+  line-height: 1.2857;
+  color:black;
+  text-decoration:none
+}
+
+.home-single-product {
+  margin-bottom: 26px;
+}
+
+.home-single-product .part-1 {
+  position: relative;
+  height: 390px;
+  max-height: 390px;
+  margin-bottom: 20px;
+  overflow: hidden;
+}
+
+.home-single-product .part-1 ul {
+  position: absolute;
+  bottom: -41px;
+  left: 50%;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  opacity: 0;
+  transition: bottom 0.5s, opacity 0.5s;
+  transform: translate(-50%, 0);
+}
+
+.home-single-product .part-1::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  transition: all 0.3s;
+}
+
+.home-single-product:hover .part-1::before {
+  transform: scale(1.2,1.2) rotate(5deg);
+}
+
+.home-single-product .part-1 .discount,
+.home-single-product .part-1 .new {
+  position: absolute;
+  top: 15px;
+  left: 20px;
+  color: #ffffff;
+  background-color: #fe302f;
+  padding: 2px 8px;
+  text-transform: uppercase;
+  font-size: 0.85rem;
+}
+
+.home-single-product .part-1 .new {
+  left: 0;
+  background-color: #444444;
+}
+
+.home-single-product:hover .part-1 ul {
+  bottom: 30px;
+  opacity: 1;
+}
+
+.home-single-product .part-1 ul li {
+  display: inline-block;
+  margin-right: 4px;
+}
+
+.home-single-product .part-1 ul li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  background-color: #ffffff;
+  color: #444444;
+  text-align: center;
+  transition: color 0.2s;
+}
+
+.home-single-product .part-1 ul li a:hover {
+  color: #fe302f;
+}
+
+.home-single-product .part-2 .home-single-product-title {
+  font-size: 1.1rem;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.home-single-product .part-2 h4 {
+  display: inline-block;
+  font-size: 1rem;
+}
+
+.home-single-product-load {
+  width:170px;
+  border-radius:40px;
+  background-color:#ebe7e7;
+}
+
+.home-single-product-load a {
+  font-size: 15px;
+  text-transform: uppercase;
+  color:black;
+  text-decoration:none;
+  font-family: 'Times New Roman', Times, serif;
+  min-width: 179px;
+  height: 46px;
+}
+
+.home-single-product-load a:hover {
+  color:#fff;
+}
+
+.home-single-product-load:hover {
+  background-color: #444444;
+}
+
+.home-single-product-view {
+  width:120px;
+  border-radius:40px;
+  background-color:#ebe7e7;
+}
+
+.home-single-product-view a{
+  font-size: 13px;
+  text-transform: uppercase;
+  color:black;
+  text-decoration:none;
+  font-family: 'Times New Roman', Times, serif;
+  min-width: 90px;
+  height: 35px;
+}
+
+.home-single-product-view:hover {
+  background-color:#717fe0;
+  transition: all 0.9s;
+}
+
+.home-single-product-view a:hover {
+  color:white;
+}
+
+.home-product-overview {
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-size: 36px;
+  line-height: 1.1;
+  text-transform: uppercase;
+}
+
+.home-cate-button {
+  text-transform: uppercase;
+  margin-right: 15px;
+}
+
+.home-cate-button a {
+  font-size: 13px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  color:black;
+  text-decoration: none;
+}
+
+.home-cate-button a:hover {
+  color:#4558d8;
+}
+
+.ab-t-l {
+	position: absolute;
+	left: 0px;
+	top: 0px;
+  text-decoration: none;
+}

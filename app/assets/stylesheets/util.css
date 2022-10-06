@@ -16,17 +16,6 @@ button {
   cursor: pointer;
 }
 
-.h-full {
-  height: 100%;
-}
-
-.trans-04 {
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-}
-
 .flex-c-m {
   justify-content: center;
   -ms-align-items: center;
@@ -39,4 +28,33 @@ button {
   -ms-align-items: center;
   align-items: center;
   display: flex;
+}
+
+.trans-04 {
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+}
+
+.trans-05 {
+  -webkit-transition: all 0.5s;
+  -o-transition: all 0.5s;
+  -moz-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.trans-09 {
+  -webkit-transition: all 0.9s;
+  -o-transition: all 0.9s;
+  -moz-transition: all 0.9s;
+  transition: all 0.9s;
+}
+
+.pt-8{
+  padding-top:80px;
+}
+
+.pt-13{
+  padding-top:130px;
 }

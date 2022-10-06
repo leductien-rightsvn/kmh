@@ -10,6 +10,10 @@
   background-color: #222;
 }
 
+.header-top-bar .container {
+  height: 100%;
+}
+
 .header-left-top-bar {
   font-family: Poppins-Regular;
   font-size: 12px;
@@ -36,7 +40,7 @@
 
 .header-wrap-menu-desktop {
   z-index: 1100;
-  background-color: #fff;
+  background-color: #eae9e5;
   width: 100%;
   height: 84px;
   top: 40px;
@@ -114,6 +118,7 @@
 .header-main-menu > li > .header-sub-menu {
   top:100%;
   left: 0;
+  z-index:9;
 }
 
 .header-sub-menu a {
@@ -149,4 +154,45 @@
 .header-sub-menu > li:hover > a {
   color: #6c7ae0;
   text-decoration: none;
+}
+
+.carousel-inner h3 {
+  position: absolute;
+  top:30%;
+  left:20%;
+  font-family: 'Times New Roman', Times, serif;
+  font-size:38px;
+  transform: translate(-20%, -30%);
+}
+
+.carousel-inner h1 {
+  position: absolute;
+  font-weight: bold;
+  top:40%;
+  left:20%;
+  font-size: 60px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  transform: translate(-20%, -40%);
+}
+
+.carousel-inner .home-slide-button {
+  position: absolute;
+  top:52%;
+  left:18%;
+  width:160px;
+  height:50px;
+  border-radius:40px;
+  background-color: #6c7ae0;
+  transform: translate(-18%, -52%);
+}
+
+.home-slide-button a {
+  color:white;
+  font-size:18px;
+  font-family: 'Times New Roman', Times, serif;
+  text-decoration: none;
+}
+
+.home-slide-button:hover {
+  background-color: #222;
 }
