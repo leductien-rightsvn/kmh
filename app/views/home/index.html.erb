@@ -48,50 +48,7 @@
 <div class="bg0 pt-8">
   <div class="container">
     <div class="row">
-      <div class="col-md-6 col-xl-4 pb-8">
-        <div class="homecate-border">
-          <%= image_tag ('banner-01.jpg') %>
-          <a href="product.html" class="homecate-border-txt ab-t-l px-5 trans-03 respon3">         
-            <div class="homecate-border-title pt-5">
-              WOMEN
-              <div class="homecate-border-info">Spring 2022</div>
-            </div>
-            <div class="homecate-border-txt-child2 pt-13 trans-05">        
-              <div class="homecate-border-link trans-09">Shop Now</div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-xl-4 pb-8">
-        <div class="homecate-border">
-          <%= image_tag ('banner-02.jpg') %>
-          <a href="product.html" class="homecate-border-txt ab-t-l px-5 trans-03 respon3">
-            <div class="homecate-border-title pt-5">
-              MEN
-              <div class="homecate-border-info">Hot Design</div>
-            </div> 
-            <div class="homecate-border-txt-child2 pt-13 trans-05">     
-              <div class="homecate-border-link trans-09">Shop Now</div>
-            </div>
-          </a>
-        </div>
-      </div>
-
-      <div class="col-md-6 col-xl-4 pb-8">
-        <div class="homecate-border">
-          <%= image_tag ('banner-03.jpg') %>
-          <a href="product.html" class="homecate-border-txt ab-t-l px-5 trans-03 respon3">
-            <div class="homecate-border-title pt-5">
-              ACCESSORIES
-              <div class="homecate-border-info">New Trend</div>
-            </div>
-            <div class="homecate-border-txt-child2 pt-13 trans-05">
-              <div class="homecate-border-link trans-09">Shop Now</div>
-            </div>
-          </a>
-        </div>
-      </div>
+      <%= render(partial: "top3_category", collection: @categories_top3, as: "category") || "There's no category to be displayed" %>
     </div>
    </div>
 </div>
@@ -101,7 +58,6 @@
     <div class="pb-3">
       <h3 class="home-product-overview">Product Overview</h3>
     </div>
-
     <div class="flex-w flex-sb-m">
       <div class="flex-w flex-l-m">
         <button class="home-cate-button">
@@ -126,146 +82,11 @@
     </div>
 
     <div class="row pt-5">
-      <div class="col-xl-3">
-        <div class="home-single-product">
-          <div class="part-1">                  
-            <%= image_tag("product-05.jpg", size: "320x450", alt: "Edit Entry") %>                     
-            <ul><div class="home-single-product-view">
-              <a href="#" class="flex-c-m trans-09">Quick view</a>
-            </div></ul>
-          </div>
-          <div class="part-2">
-            <h3 class="home-single-product-title">Front Pocket Jumper</h3>
-            <h4>$49.99</h4>
-          </div>
-        </div>
-      </div>
-      <!-- Single Product -->
-      <div class="col-md-6 col-lg-4 col-xl-3">
-        <div class="home-single-product">
-          <div class="part-1">
-            <span class="discount">15% off</span>
-            <%= image_tag("product-05.jpg", size: "320x450", alt: "Edit Entry") %>
-            <ul class="px-5">
-              <div class="home-single-product-view">
-                <a href="#" class="flex-c-m trans-09">Quick view</a>
-              </div>
-            </ul>
-          </div>
-          <div class="part-2">
-            <h3 class="home-single-product-title">Front Pocket Jumper</h3>
-            <h4>$49.99</h4>
-          </div>
-        </div>
-      </div>
-      <!-- Single Product -->
-      <div class="col-md-6 col-lg-4 col-xl-3">
-        <div class="home-single-product">
-          <div class="part-1">
-            <%= image_tag("product-05.jpg", size: "320x450", alt: "Edit Entry") %>
-            <ul class="px-5">
-              <div class="home-single-product-view">
-                <a href="#" class="flex-c-m trans-09">Quick view</a>
-              </div>
-            </ul>
-          </div>
-          <div class="part-2">
-            <h3 class="home-single-product-title">Front Pocket Jumper</h3>
-            <h4>$49.99</h4>
-          </div>
-        </div>
-      </div>
-      <!-- Single Product -->
-      <div class="col-md-6 col-lg-4 col-xl-3">
-        <div class="home-single-product">
-          <div class="part-1">
-            <%= image_tag("product-05.jpg", size: "320x450", alt: "Edit Entry") %>
-            <ul class="px-5">
-              <div class="home-single-product-view">
-                <a href="#" class="flex-c-m trans-09">Quick view</a>
-              </div>
-            </ul>
-          </div>
-          <div class="part-2">
-            <h3 class="home-single-product-title">Front Pocket Jumper</h3>
-            <h4>$49.99</h4>
-          </div>
-        </div>
-      </div>
-        <!-- Single Product -->
-      <div class="col-md-6 col-lg-4 col-xl-3">
-        <div class="home-single-product">
-          <div class="part-1">
-            <%= image_tag("product-05.jpg", size: "320x450", alt: "Edit Entry") %>
-            <ul class="px-5">
-              <div class="home-single-product-view">
-                <a href="#" class="flex-c-m trans-09">Quick view</a>
-              </div>
-            </ul>
-          </div>
-          <div class="part-2">
-            <h3 class="home-single-product-title">Front Pocket Jumper</h3>
-            <h4>$49.99</h4>
-          </div>
-        </div>
-      </div>
-        <!-- Single Product -->
-      <div class="col-md-6 col-lg-4 col-xl-3">
-        <div class="home-single-product">
-          <div class="part-1">
-            <%= image_tag("product-05.jpg", size: "320x450", alt: "Edit Entry") %>
-            <ul class="px-5">
-              <div class="home-single-product-view">
-                <a href="#" class="flex-c-m trans-09">Quick view</a>
-              </div>
-            </ul>
-          </div>
-          <div class="part-2">
-            <h3 class="home-single-product-title">Front Pocket Jumper</h3>
-            <h4>$49.99</h4>
-          </div>
-        </div>
-      </div>
-        <!-- Single Product -->
-      <div class="col-md-6 col-lg-4 col-xl-3">
-        <div class="home-single-product">
-          <div class="part-1">
-            <%= image_tag("product-05.jpg", size: "320x450", alt: "Edit Entry") %>
-            <ul class="px-5">
-              <div class="home-single-product-view">
-                <a href="#" class="flex-c-m trans-09">Quick view</a>
-              </div>
-            </ul>
-          </div>
-          <div class="part-2">
-            <h3 class="home-single-product-title">Front Pocket Jumper</h3>
-            <h4>$49.99</h4>
-          </div>
-        </div>
-      </div>
-        <!-- Single Product -->
-      <div class="col-md-6 col-lg-4 col-xl-3">
-        <div class="home-single-product">
-          <div class="part-1">
-            <%= image_tag("product-05.jpg", size: "320x450", alt: "Edit Entry") %>
-            <ul class="px-5">
-              <div class="home-single-product-view">
-                <a href="#" class="flex-c-m trans-09">Quick view</a>
-              </div>
-            </ul>
-          </div>
-          <div class="part-2">
-            <h3 class="home-single-product-title">Front Pocket Jumper</h3>
-            <h4>$49.99</h4>
-          </div>
-        </div>
-      </div>
+      <%= render(partial: "products", collection: @products, as: "product") || "There's no product to be displayed" %>
     </div>
 
     <div class="d-flex justify-content-center">
-      <div class="home-single-product-load pt-1">
-        <a href="#" class="flex-c-m trans-09">Load More</a>
-      </div>
+      <a href="#" class="flex-c-m trans-09"><%= paginate @products %></a>
     </div>
     <br/>
   </div>
