@@ -23,9 +23,11 @@ class User < ApplicationRecord
   # :confirmable, :lockable, :timeoutable, :trackable and :omniauthable
   devise :database_authenticatable, :registerable,
          :recoverable, :rememberable, :validatable
+  rolify
 
   has_many :orders, dependent: :destroy
 
   validates :name, presence: true, length: { maximum: 255 }
   validates :address, length: { maximum: 255 }
+  validates :roles, presence: true
 end
